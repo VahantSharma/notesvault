@@ -6,8 +6,16 @@
   <title>Student Account - NotesVault</title>
   <link rel="stylesheet" href="../styling/studentAccount.css" />
   <link rel="icon" href="favicon.png" type="image/x-icon" />
+  <script src="../scripts/auth.js"></script>
 </head>
 <body>
+
+  <script>
+    // Protect this page - require authentication
+    if (!window.requireAuth()) {
+      // This will redirect to login if not authenticated
+    }
+  </script>
 
   <!-- Header -->
   <header>
